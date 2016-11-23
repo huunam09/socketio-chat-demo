@@ -1,0 +1,15 @@
+PODS:
+  - ISMessages (1.1)
+  - Socket.IO-Client-Swift (8.1.2)
+
+DEPENDENCIES:
+  - ISMessages
+  - Socket.IO-Client-Swift
+
+SPEC CHECKSUMS:
+  ISMessages: 7ebb5ff68170ef0e32460d270f379b6080297e39
+  Socket.IO-Client-Swift: 542d82e6708f9901b3f6c1d134fb60fa0d09d4d1
+
+PODFILE CHECKSUM: 0d48418d0ec089feb23c22cdfe849c5869bc16f4
+
+COCOAPODS: 1.2.0.beta.1

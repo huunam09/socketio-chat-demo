@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jP4-Ah-rG9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Szx-X1-YOh">
+            <objects>
+                <navigationController id="jP4-Ah-rG9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Iq1-54-ivn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BMD-Zo-geG" kind="relationship" relationship="rootViewController" id="BLf-sP-2a3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QyU-Jb-Qzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-377" y="153"/>
+        </scene>
+        <!--User Online-->
+        <scene sceneID="DBd-87-K7c">
+            <objects>
+                <viewController id="BMD-Zo-geG" customClass="UserListTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yq1-yc-Wh9"/>
+                        <viewControllerLayoutGuide type="bottom" id="BIY-Pi-9ex"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WdR-kb-ySW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="cU2-zp-fIL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cU2-zp-fIL" secondAttribute="trailing" id="6Ww-Pm-aT9"/>
+                            <constraint firstItem="cU2-zp-fIL" firstAttribute="top" secondItem="WdR-kb-ySW" secondAttribute="top" id="ZLX-bQ-1AA"/>
+                            <constraint firstItem="cU2-zp-fIL" firstAttribute="leading" secondItem="WdR-kb-ySW" secondAttribute="leading" id="fyo-bv-jCV"/>
+                            <constraint firstItem="BIY-Pi-9ex" firstAttribute="top" secondItem="cU2-zp-fIL" secondAttribute="bottom" id="jvL-wX-ulg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="User Online" id="cx2-gs-Svr"/>
+                    <connections>
+                        <outlet property="tableViewListUser" destination="cU2-zp-fIL" id="w9J-4a-6vn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wFU-eg-1XT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="484" y="151.57421289355324"/>
+        </scene>
+        <!--Chat with user-->
+        <scene sceneID="XzO-ek-R3P">
+            <objects>
+                <viewController storyboardIdentifier="messageViewController" id="ycY-Ia-h8O" customClass="MessageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Q0c-AT-EWm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ipt-od-l8s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vyw-xo-XyB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat with user" id="esW-xv-Z8D"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8t-U3-vlu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1278" y="152"/>
+        </scene>
+    </scenes>
+</document>
